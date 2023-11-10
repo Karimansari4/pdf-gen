@@ -15,7 +15,7 @@ app.use(cors())
 app.use(express.json())
 app.use(upload())
 
-// route to render build react app
+// route to render build react https://pdf-gen-production-7c75.up.railway.app
 app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, "build", "index.html"))
 })
